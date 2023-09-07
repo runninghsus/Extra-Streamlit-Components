@@ -5,8 +5,11 @@ from extra_streamlit_components import IS_RELEASE
 
 if IS_RELEASE:
     absolute_path = os.path.dirname(os.path.abspath(__file__))
-    build_path = os.path.join(absolute_path, "frontend/build")
-    _component_func = components.declare_component("bouncing_image", path=build_path)
+    # build_path = os.path.join(absolute_path, "frontend/build")
+    # _component_func = components.declare_component("tab_bar", path=build_path)
+    # for lupe streamlit purpose
+    build_path = os.path.join(os.getcwd(), 'build')
+    _component_func = components.declare_component("tab_bar", path=build_path)
 else:
     _component_func = components.declare_component("bouncing_image", url="http://localhost:3001")
 
