@@ -10,7 +10,7 @@ if IS_RELEASE:
     # build_path = os.path.join(absolute_path, "frontend/build")
     # _component_func = components.declare_component("tab_bar", path=build_path)
     # for lupe streamlit purpose
-    build_path = os.path.join(absolute_path, "../lupe/build")
+    build_path = os.path.join(absolute_path, "../../lupe/build")
     # build_path = os.path.join(os.getcwd(), 'build')
     # _component_func = components.declare_component("tab_bar", path=build_path)
 else:
